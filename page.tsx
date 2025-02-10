@@ -79,7 +79,7 @@ export default function Page() {
             <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-3">
               <div className="flex flex-col items-center space-y-4 rounded-lg border p-6">
                 <BarChart className="h-12 w-12" />
-                <h3 className="text-xl font-bold">Content Strategy & Marketing</h3>
+                <h3 className="text-xl font-bold">Content Marketing</h3>
                 <p className="text-center text-muted-foreground">
                   Data-driven content strategies that engage your audience and drive conversions
                 </p>
