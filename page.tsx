@@ -4,6 +4,10 @@ import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+export { prefix };
+
 export default function Page() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -12,7 +16,7 @@ export default function Page() {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex items-center space-x-2">
-              <Image src="/logo.png" alt="The Brand Atelier Logo" width={80} height={80} className="h-10 w-auto" />
+              <Image src={`${prefix}/logo.png`} alt="The Brand Atelier Logo" width={80} height={80} className="h-10 w-auto" />
               <span className="text-xl font-bold">The Brand Atelier</span>
             </div>
           </Link>
@@ -54,7 +58,7 @@ export default function Page() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.png"
+                  src={`${prefix}/placeholder.png`}
                   alt="Hero Image"
                   width={500}
                   height={500}
@@ -128,7 +132,7 @@ export default function Page() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/logo.png"
+                  src={`${prefix}/logo.png`}
                   alt="About Image"
                   width={500}
                   height={500}
