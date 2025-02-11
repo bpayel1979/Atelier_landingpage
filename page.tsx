@@ -151,7 +151,7 @@ export default function Page() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
-              <Button size="lg">
+              <Button size="lg" onClick={() => window.open(bookingLink, "_blank")}>
                 Schedule a Call
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
