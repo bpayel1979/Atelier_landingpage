@@ -12,7 +12,7 @@ export default function Page() {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex items-center space-x-2">
-              <Image src={"./logo.png"} alt="The Brand Atelier Logo" width={80} height={80} className="h-10 w-auto" />
+              <Image src={"./nextjs-github-pages/logo.png"} alt="The Brand Atelier Logo" width={80} height={80} className="h-10 w-auto" />
               <span className="text-xl font-bold">The Brand Atelier</span>
             </div>
           </Link>
@@ -54,7 +54,7 @@ export default function Page() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src={"./placeholder.png"}
+                  src={"./nextjs-github-pages/placeholder.png"}
                   alt="Hero Image"
                   width={500}
                   height={500}
@@ -128,7 +128,7 @@ export default function Page() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src={"./logo.png"}
+                  src={"./nextjs-github-pages/logo.png"}
                   alt="About Image"
                   width={500}
                   height={500}
