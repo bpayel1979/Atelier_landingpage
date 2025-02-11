@@ -5,6 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export default function Page() {
+  const bookingLink = "https://calendly.com/b-payel/30min";
+
   return (
     <div className="flex min-h-screen flex-col">
       {/* Navigation */}
@@ -27,7 +29,7 @@ export default function Page() {
               Contact
             </Link>
           </nav>
-          <Button>Get Started</Button>
+          {/* <Button>Get Started</Button> */}
         </div>
       </header>
 
@@ -46,7 +48,7 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg">
+                  <Button size="lg" onClick={() => window.open(bookingLink, "_blank")}>
                     Schedule a Consultation
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
